@@ -113,6 +113,14 @@
   margin-left: 0.5rem;
 }
 
+
+/* Custom Styles */
+
+/* Navbar starts */
+.customColor{
+  color: rgba(0, 0, 0, 1)
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
