@@ -33,7 +33,7 @@
 
 
 .title a {
-  color: #0070f3;
+  color: #2e333a;
   text-decoration: none;
 }
 
@@ -112,6 +112,15 @@
   margin-left: 0.5rem;
 }
 
+.icon{
+  color: white;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+.icon:hover{
+  color: #00594C;
+}
 
 /* Custom Styles */
 
@@ -125,5 +134,8 @@
     width: 100%;
     flex-direction: column;
     grid-gap:1rem;
+  }
+  .icon{
+    padding: 20px;
   }
 }
