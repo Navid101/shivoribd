@@ -15,10 +15,10 @@ const Footer = () => {
                     </div>
                     
                     <div className="col-md-6 text-center text-lg-end my-2">
-                            <a target="_blank" className={styles.icon} href="https://www.facebook.com/shivorisaree">
+                            <a target="_blank" rel="noopener noreferrer" className={styles.icon} href="https://www.facebook.com/shivorisaree">
                                 <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
                             </a>
-                            <a target="_blank" className={styles.icon} href="https://www.instagram.com/shivori/">
+                            <a target="_blank" rel="noopener noreferrer" className={styles.icon} href="https://www.instagram.com/shivori/">
                                 <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
                             </a>
                     </div>
