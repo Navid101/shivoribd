@@ -10,7 +10,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Layout = ({children}) => {
     return (
         <>
-        <Navbar bg="light" expand="lg" className="mx-5">
+        <Navbar bg="light" expand="lg">
+            <div className="container">
             <Link href="/" passHref>
                 <Navbar.Brand>
                     <img src="/logo.png" height={33} width={120}></img>
@@ -34,6 +35,7 @@ const Layout = ({children}) => {
                 <Link href="/cart" passHref><Nav.Link>Cart</Nav.Link></Link>
                 </Nav>
             </Navbar.Collapse>
+            </div>
         </Navbar>
         </>
     )
