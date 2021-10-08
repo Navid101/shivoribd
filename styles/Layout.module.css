@@ -19,20 +19,18 @@
 
 .footer {
   width: 100%;
-  height: 100px;
   border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #003F36;
+  padding: 2rem;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.footerContainer{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: center;
+  justify-content: space-between;
 }
+
 
 .title a {
   color: #0070f3;
@@ -73,10 +71,10 @@
 .grid {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   max-width: 800px;
-  margin-top: 3rem;
+  grid-gap: 10rem;
 }
 
 .card {
@@ -122,9 +120,10 @@
   color: rgba(0, 0, 0, 1)
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   .grid {
     width: 100%;
     flex-direction: column;
+    grid-gap:1rem;
   }
 }
