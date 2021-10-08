@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import  Navbar  from 'react-bootstrap/Navbar'
 import  Nav  from 'react-bootstrap/Nav'
 import  NavDropdown  from "react-bootstrap/NavDropdown"
@@ -15,7 +16,7 @@ const Layout = ({children}) => {
             <div className="container">
                 <Link href="/" passHref>
                     <Navbar.Brand>
-                        <img src="/logo.png" height={33} width={120}></img>
+                        <Image src="/logo.png" height={33} width={120}></Image>
                     </Navbar.Brand>
                 </Link>
                 <Navbar.Toggle aria-controls="navbarScroll" />

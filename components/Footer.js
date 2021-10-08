@@ -1,10 +1,14 @@
 import React from 'react'
+import Link from 'next/link'
+import styles from "./../styles/Layout.module.css"
 
 const Footer = () => {
     return (
-        <div className="container">
-            <h5>Refund and Return Policy</h5>
-        </div>
+        <section className={styles.footer}>
+            <div>
+                <Link href="/refund"><a style={{color:"white"}}>Refund and Return Policy</a></Link>
+            </div>
+        </section>
     )
 }
 
