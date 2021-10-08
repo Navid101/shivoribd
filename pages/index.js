@@ -8,12 +8,15 @@ const index = () => {
   return (
     <>
     <div className="carouselContainer">
-      <Carousel>
-        <Carousel.Item>
+      <Carousel fade>
+        <Carousel.Item interval={1200}>
           <Image src="/assets/slide_1.webp" height={1080} width={1920}></Image>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval={1200}>
           <Image src="/assets/slide_2.webp" height={1080} width={1920}></Image>
+        </Carousel.Item>
+        <Carousel.Item interval={1200}>
+          <Image src="/assets/slide_3.webp" height={1080} width={1920}></Image>
         </Carousel.Item>
       </Carousel>
     </div>
