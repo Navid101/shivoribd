@@ -130,16 +130,24 @@
 }
 
 /* Categories start */
-.categoriesContainer{
+.gridContainer{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  grid-column-gap: 10rem;
+  grid-column-gap: 2rem;
   grid-row-gap: 2.5rem;
-  padding: 2.5rem 0;
+  padding: 2rem 0;
+}
+
+.image{
+  margin: 50px;
 }
 
 .image:hover{
   cursor: pointer;
+}
+
+.imageContainer{
+  padding: 0 150px;
 }
 
 @media (max-width: 720px) {
@@ -149,7 +157,7 @@
     grid-gap:1rem;
   }
 
-  .categoriesContainer{
+  .gridContainer{
     grid-template-columns:1fr;
   }
   .icon{

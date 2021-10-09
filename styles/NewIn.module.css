@@ -1,0 +1,14 @@
+.overlayContainer{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top:40%;
+    padding:10px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(0, 89, 76, .3);
+}
