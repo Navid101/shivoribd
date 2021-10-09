@@ -129,11 +129,28 @@
   color: rgba(0, 0, 0, 1)
 }
 
+/* Categories start */
+.categoriesContainer{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-column-gap: 10rem;
+  grid-row-gap: 2.5rem;
+  padding: 2.5rem 0;
+}
+
+.image:hover{
+  cursor: pointer;
+}
+
 @media (max-width: 720px) {
   .grid {
     width: 100%;
     flex-direction: column;
     grid-gap:1rem;
+  }
+
+  .categoriesContainer{
+    grid-template-columns:1fr;
   }
   .icon{
     padding: 20px;

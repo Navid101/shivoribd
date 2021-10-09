@@ -1,6 +1,6 @@
 import React from 'react'
 
-const kurta = () => {
+const kurti = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const kurta = () => {
     )
 }
 
-export default kurta
+export default kurti
