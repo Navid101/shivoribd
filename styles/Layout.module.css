@@ -138,17 +138,20 @@
   padding: 2rem 0;
 }
 
+.imageContainer{
+  padding: 0 150px;
+}
+
 .image{
-  margin: 50px;
+  width: 100%;
+  height: auto;
 }
 
 .image:hover{
   cursor: pointer;
 }
 
-.imageContainer{
-  padding: 0 150px;
-}
+
 
 @media (max-width: 720px) {
   .grid {
@@ -159,6 +162,10 @@
 
   .gridContainer{
     grid-template-columns:1fr;
+  }
+
+  .imageContainer{
+    padding: 0;
   }
   .icon{
     padding: 20px;
