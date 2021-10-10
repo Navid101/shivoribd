@@ -1,11 +1,11 @@
 import React from 'react'
-import { useRouter } from 'next/dist/client/router'
+import  {useRouter}  from 'next/router'
 import Card from '../../../components/Card';
 import styles from './../../../styles/Product.module.css'
 
 const ids = [1,2,3,4,5,6]
 
-const index = () => {
+const ProductList = () => {
     const router = useRouter();
     const {productCategory} = router.query;
     return (
@@ -22,4 +22,4 @@ const index = () => {
     )
 }
 
-export default index
+export default ProductList
