@@ -13,6 +13,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Layout = ({children}) => {
+
+    const categories = ["Saree","Salwar","Pant","Kurti"]
     return (
         <>
         <Navbar bg="light" expand="lg">
@@ -30,10 +32,9 @@ const Layout = ({children}) => {
                     >
                     <Link href="/" passHref><Nav.Link>Home</Nav.Link></Link>
                     <NavDropdown title="Products" id="navbarScrollingDropdown">
-                        <Link href="/saree" passHref><NavDropdown.Item>Saree</NavDropdown.Item></Link>
-                        <Link href="/pant" passHref><NavDropdown.Item>Pant</NavDropdown.Item></Link>
-                        <Link href="/kurta" passHref><NavDropdown.Item>Kurta</NavDropdown.Item></Link>
-                        <Link href="/salwar" passHref><NavDropdown.Item>Salwar</NavDropdown.Item></Link>
+                        {categories.map((category)=>{
+                            return <Link key={category} href={`/product/${category.toLowerCase()}`} passHref><NavDropdown.Item>{category}</NavDropdown.Item></Link>
+                        })}
                     </NavDropdown>
                     <Link href="/search" passHref><Nav.Link><FontAwesomeIcon icon={faSearch}></FontAwesomeIcon></Nav.Link></Link>
                     <Link href="/cart" passHref><Nav.Link><FontAwesomeIcon icon={faCartPlus}></FontAwesomeIcon></Nav.Link></Link>

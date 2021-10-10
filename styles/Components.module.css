@@ -1,5 +1,7 @@
+/* New In Component starts */
 .overlayContainer{
     position: relative;
+    cursor: pointer;
 }
 
 .overlay{
@@ -12,3 +14,13 @@
     color: white;
     background-color: rgba(0, 89, 76, .3);
 }
+
+/* New In Component ends */
+
+/* Card Container starts */
+.cardContainer{
+    padding-bottom: 1rem;
+}
+
+/* Card Container ends */
+
