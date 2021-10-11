@@ -24,3 +24,18 @@
 
 /* Card Container ends */
 
+/* Pagination link starts*/
+.paginationItem{
+    background-color: rgba(0, 89, 76, .7);
+    color: white;
+    padding: .5rem 1rem;
+    border: 1px solid white;
+}
+
+.paginationItem:hover{
+    color: black;
+
+}
+
+/* Pagination link ends*/
+
