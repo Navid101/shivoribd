@@ -10,7 +10,7 @@ const ProductList = () => {
     const router = useRouter();
     const {productCategory} = router.query;
     const [currentPage, setCurrentPage] = useState(1);
-    const productsPerPage = 4;
+    const productsPerPage = 12;
 
     //Get Current Producsts
     const indexOFLastProduct = currentPage * productsPerPage;

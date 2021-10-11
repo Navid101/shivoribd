@@ -32,9 +32,17 @@
     border: 1px solid white;
 }
 
+
 .paginationItem:hover{
     color: black;
 
+}
+
+.paginationItem:focus{
+    background-color: rgba(0, 89, 76, 1);
+    color: white;
+    padding: .5rem 1rem;
+    border: 1px solid white;
 }
 
 /* Pagination link ends*/
